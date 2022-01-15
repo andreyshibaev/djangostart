@@ -1,0 +1,13 @@
+Django starter
+-
+- Windows 10
+- git clone https://github.com/andreyshibaev/djangostart.git
+- cd djangostart
+- python -m venv venv-site
+- venv-site\Scripts\activate.bat
+- pip install django && pip install django-debug-toolbar && pip install django-cleanup && pip install django-environ
+- create .env in the root folder
+- in .env add constant: DEBUG = True and SECRET_KEY = ' '
+- in terminal add command ---> python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
+- paste the generated key in file.env in constant SECRET_KEY = 'generated key'
+- npm i && py manage.py migrate && py manage.py runserver

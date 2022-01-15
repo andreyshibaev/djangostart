@@ -1,0 +1,15 @@
+body {
+  background: #e6c7af;
+}
+body h1 {
+  color: #0a2d47;
+}
+
+header {
+  background: #9beed9;
+}
+
+footer {
+  background: #212529;
+  color: azure;
+}
