@@ -1,6 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="{% url 'homeapp:homepage' %}">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -10,6 +9,47 @@
           <a class="nav-link active" aria-current="page" href="{% url 'homeapp:homepage' %}">Home</a>
         </li>
       </ul>
+      {% if user.is_authenticated %}
+      <ul class="navbar-nav d-flex">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="{% url 'account:profileuser' %}"
+            >Profile</a
+          >
+        </li>
+        {% if user.is_superuser %}
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="{% url 'admin:index' %}"
+            >Admin</a
+          >
+        </li>
+        {% endif %}
+      </ul>
+      {% else %}
+      <ul class="navbar-nav d-flex">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="{% url 'account:signupuser' %}"
+            >Sign Up</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="{% url 'account:loginuser' %}"
+            >Log in</a
+          >
+        </li>
+      </ul>
+      {% endif %}
     </div>
   </div>
 </nav>
