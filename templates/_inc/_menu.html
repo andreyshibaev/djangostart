@@ -8,6 +8,9 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="{% url 'homeapp:homepage' %}">Home</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'blog:myblog' %}">Blog</a>
+        </li>
       </ul>
       {% if user.is_authenticated %}
       <ul class="navbar-nav d-flex">
