@@ -3,9 +3,9 @@ Django starter
 - Windows 10
 - git clone https://github.com/andreyshibaev/djangostart.git
 - cd djangostart
-- python -m venv venv-site
-- venv-site\Scripts\activate.bat
-- pip install django && pip install django-debug-toolbar && pip install django-cleanup && pip install django-environ
+- python -m venv appvenv
+- appvenv\Scripts\activate.bat
+- pip install -r requirements.txt
 - create .env in the root folder
 - in .env add constant: DEBUG = True and SECRET_KEY = ' '
 - in terminal add command ---> python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"

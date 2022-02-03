@@ -16,6 +16,8 @@ header h5 {
 }
 
 footer {
-  background: #212529;
-  color: azure;
+  background: #022829;
+}
+footer h3 {
+  color: #ffffe9;
 }
