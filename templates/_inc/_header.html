@@ -7,7 +7,7 @@
     <div class="m-2"><h5>Hello {{ user.username }}</h5></div>
     <form action="{% url 'account:logoutuser' %}" method="post">
       {% csrf_token %}
-      <button type="submit" class="btn btn-primary">Выход</button>
+      <button type="submit" class="btn btn-lg btn-info">Exit</button>
     </form>
     {% endif %}
   </div>

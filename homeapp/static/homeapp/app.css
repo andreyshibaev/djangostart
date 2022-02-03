@@ -6,7 +6,13 @@ body h1 {
 }
 
 header {
-  background: #9beed9;
+  background: #022829;
+}
+header h1 {
+  color: #ffffe9;
+}
+header h5 {
+  color: #ffffe9;
 }
 
 footer {

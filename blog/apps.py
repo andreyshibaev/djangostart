@@ -1,8 +1,7 @@
-from tabnanny import verbose
 from django.apps import AppConfig
 
 
 class BlogConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
     name = 'blog'
-    verbose_name = 'Приложение посты'
+    verbose_name = 'Application Blog'
