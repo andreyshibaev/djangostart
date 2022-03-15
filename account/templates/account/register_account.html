@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
 
+{% block title %}
+Register form
+{% endblock title %}
+
 {% block content %}
     {% if user.is_authenticated %}
         <div class="container text-center">
@@ -27,7 +31,7 @@
                 <input type="password" class="form-control" id="id_password2" name="password2">
                 <label for="id_password2">Confirm password</label>
             </div>
-            <button type="submit" class="btn btn-info mt-3 btn-lg">Register</button>
+            <button type="submit" class="btn btn-info mt-3">Register</button>
         </form>
     </div>
     {% endif %}

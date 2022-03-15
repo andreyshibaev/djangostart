@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
 
+{% block title %}
+Login form
+{% endblock title %}
+
 {% block content %}
     {% if user.is_authenticated %}
                 <div class="container text-center">
@@ -23,7 +27,7 @@
                 <input type="password" class="form-control" id="passwordUser" name="password">
                 <label for="passwordUser">Your password</label>
             </div>
-            <button type="submit" class="btn btn-info btn-lg">To come in</button>
+            <button type="submit" class="btn btn-info">To come in</button>
         </form>
     </div>
     {% endif %}
