@@ -2,12 +2,12 @@
   <div class="container">
     <h1 class="text-center">Boilerplate for django projects</h1>
   </div>
-  <div class="container d-flex justify-content-end">
+  <div class="container d-flex justify-content-center">
     {% if user.is_authenticated %}
     <div class="m-2"><h5>Hello {{ user.username }}</h5></div>
     <form action="{% url 'account:logoutuser' %}" method="post">
       {% csrf_token %}
-      <button type="submit" class="btn btn-lg btn-info">Exit</button>
+      <button type="submit" class="btn btn-info">Exit</button>
     </form>
     {% endif %}
   </div>
