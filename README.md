@@ -10,4 +10,7 @@ Django starter
 - in .env add constant: DEBUG = True and SECRET_KEY = ' '
 - in terminal add command ---> python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
 - paste the generated key in file.env in constant SECRET_KEY = 'generated key'
-- npm i && py manage.py migrate && py manage.py runserver
+- npm install
+- py manage.py migrate
+- py manage.py createsuperuser
+- py manage.py runserver
